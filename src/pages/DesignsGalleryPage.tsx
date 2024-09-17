@@ -4,7 +4,7 @@ export const DesignsGalleryPage = () => {
   const designs = [1, 2, 3, 4, 5, 6];
 
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex justify-center gap-3 ">
       {designs.map((design) => (
         <NavLink
           key={design}

@@ -4,6 +4,8 @@ import { HomePage } from '../pages/HomePage';
 import { DesignsGalleryPage } from '../pages/DesignsGalleryPage';
 import { NotFoundPage } from '../pages/NotFoundPage';
 import { DesignPage } from '../pages/DesignPage';
+import ConstructorNailsPage from "../pages/ConstructorNailsPage";
+import VirtualFitting from "../pages/VirtualFitting";
 
 
 export const router = createBrowserRouter([
@@ -30,6 +32,22 @@ export const router = createBrowserRouter([
     element: (
       <Suspense fallback={<div>Loading...</div>}>
         <DesignPage />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/constructor",
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <ConstructorNailsPage />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/fitting",
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <VirtualFitting />
       </Suspense>
     ),
   },
