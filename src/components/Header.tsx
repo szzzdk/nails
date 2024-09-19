@@ -2,7 +2,8 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="flex gap-3 justify-center">
+    <div className="flex gap-14 justify-center">
+      <img src="" alt="logo" />
       <NavLink
         to="/"
         className={({ isActive }) => {
